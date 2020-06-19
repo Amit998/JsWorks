@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<title>Animated Icon</title>
+	<style>
+		#chain #battery #hourglass{
+			font-size: 150px;
+		}
+	</style>
+</head>
+<body>
+	<div id="chain" class="fa"></div>
+
+		<br>
+		<br>
+
+
+
+	<div id="battery" class="fa"></div>
+	<br>
+	<br>
+
+
+
+	<div id="hourglass" class="fa"></div>
+	<script>
+		function brokenChain(){
+			let chain = document.getElementById('chain');
+			chain.innerHTML="&#xf0c1;";
+			setTimeout(function(){
+				chain.innerHTML="&#xf127;";
+			},1000);
+		}
+		brokenChain();
+		setInterval(brokenChain,2000)
+
+
+        function chargebattery(){
+			let battery = document.getElementById('battery');
+			battery.innerHTML="&#xf244;";
+			setTimeout(function(){
+				battery.innerHTML="&#xf243;";
+			},1000);
+			setTimeout(function(){
+				battery.innerHTML="&#xf242;";
+			},2000);
+			setTimeout(function(){
+				battery.innerHTML="&#xf241;";
+			},3000);
+			setTimeout(function(){
+				battery.innerHTML="&#xf240;";
+			},4000);
+		}
+		chargebattery();
+		setInterval(chargebattery,5000)
+
+
+
+		function hourglassTip(){
+			let hourglass = document.getElementById('hourglass');
+			hourglass.innerHTML="&#xf251;";
+			setTimeout(function(){
+				hourglass.innerHTML="&#xf252;";
+			},1000);
+			setTimeout(function(){
+				hourglass.innerHTML="&#xf253;";
+			},2000);
+		}
+		hourglassTip();
+		setInterval(hourglassTip,3000)
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+#boxes{
+	width: 80%;
+	margin:auto;
+	text-align: center;
+}
+#btn{
+	padding: 20px;
+	background: #f4f4f4;
+	margin-bottom: 20px;
+}
+#btn button{
+	background: #fff;
+	padding: 5px 10px;
+	border: 0;
+}
+#btn .fa{
+    font-size: 30px;
+}
+#btn .fa-play-circle{
+	color: green;
+}
+#btn .fa-pause-circle{
+	color: red;
+}
+.box{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	margin: 4px;
+	display: inline-block;
+}
+.red{background-color:red}
+.blue{background-color:blue}
+.green{background-color:green}
+.yellow{background-color:yellow}
