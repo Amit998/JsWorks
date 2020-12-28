@@ -1,0 +1,5 @@
+title=$('div[class="media-body"] > h1').text().trim()
+rating=$('div[class="inline-block text-center"] > span').text().trim()
+description=$('div[class="media-body relative"] > p').text().trim()
+
+npm install
