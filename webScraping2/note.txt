@@ -1,0 +1,1 @@
+names=$('div[class="card-info vertical-box"] > div[class="horizontal-box"] > h2')
